@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- Підключаю шрифти -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <title>Студія</title>
+  <!-- Нормалізатор -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a href="index.html" class="logo"><span>Web</span>Studio</a>
+      <ul class="header-nav-menu list">
+        <li class="menu-iteam">
+          <a href="index.html" class="menu-link current">Студія</a>
+        </li>
+        <li class="menu-iteam">
+          <a href="portfolio.html" class="menu-link">Портфоліо</a>
+        </li>
+        <li class="menu-iteam"><a href="#" class="menu-link">Контакти</a></li>
+      </ul>
+    </nav>
+    <ul class="nav-contacts list">
+      <li>
+        <a class="contact-mail menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      <li>
+        <a class="contact-num menu-link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </li>
+    </ul>
+  </header>
+  <main class="main">
+    <!--Hero Section -->
+    <section class="hero">
+      <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
+      <button class="hero_button" type="button">Замовити послугу</button>
+    </section>
+    <!-- Features -->
+    <section class="features">
+      <h2 class="section_title" hidden>Наші особливості</h2>
+      <ul>
+        <li class="features_iteam">
+          <h3 class="features_iteam_title">Увага до деталей</h3>
+          <p class="features_text">
+            Ідейні міркування, і навіть початок повсякденної роботи з
+            формування позиції.
+          </p>
+        </li>
+        <li class="features_iteam">
+          <h3 class="features_iteam_title">Пунктуальність</h3>
+          <p class="features_text">
+            Завдання організації, особливо рамки і місце навчання кадрів тягне
+            у себе.
+          </p>
+        </li>
+        <li class="features_iteam">
+          <h3 class="features_iteam_title">Планування</h3>
+          <p class="features_text">
+            Так само консультація з широким активом значною мірою зумовлює.
+          </p>
+        </li>
+        <li class="features_iteam">
+          <h3 class="features_iteam_title">Сучасні технології</h3>
+          <p class="features_text">
+            Значимість цих проблем настільки очевидна, що реалізація планових
+            завдань.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <!-- What We Do -->
+    <section class="whatwedo">
+      <h2 class="section_title">Чим ми займаємося</h2>
+      <ul>
+        <li>
+          <img src="./images/whatwedo_box_1.jpg" alt="Зображення компьютера та планшету" width="370" height="294" />
+        </li>
+        <li>
+          <img src="./images/whatwedo_box_2.jpg" alt="Зображення тестування мобиільного застосунку" width="370"
+            height="294" />
+        </li>
+        <li>
+          <img src="./images/whatwedo_box_3.jpg" alt="Зображення користувача iPad який працює з палітрою" width="370"
+            height="294" />
+        </li>
+      </ul>
+    </section>
+    <!-- Crew -->
+    <section class="crew">
+      <h2 class="section_title">Наша команда</h2>
+      <ul class="crew_blox">
+        <li class="crew_blox_block">
+          <img src="./images/crew_igor.jpg" alt="Image of Igor Demianenko - Product Designer" width="270"
+            height="260" />
+          <h3 class="crew_title">Ігор Дем'яненко</h3>
+          <p>Product Designer</p>
+        </li>
+        <li class="crew_blox_block">
+          <img src="./images/crew_olga.jpg" alt="Image of Olga Repina - Frontend Developer" width="270" height="260" />
+          <h3 class="crew_title">Ольга Рєпіна</h3>
+          <p>Frontend Developer</p>
+        </li>
+        <li class="crew_blox_block">
+          <img src="./images/crew_mykola.jpg" alt="Image of Mykola Tarasov - Marketing" width="270" height="260" />
+          <h3 class="crew_title">Микола Тарасов</h3>
+          <p>Marketing</p>
+        </li>
+        <li class="crew_blox_block">
+          <img src="./images/crew_mykhailo.jpg" alt="Image of Mykhylo Yermakov - UI Designer" width="270"
+            height="260" />
+          <h3 class="crew_title">Михайло Єрмаков</h3>
+          <p>UI Designer</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="#" class="logo"><span>Web</span>Studio</a>
+    <address class="address">
+      <ul>
+        <li>
+          <a class="loc" href="#">м. Київ, пр-т Лесі Українки, 26</a>
+        </li>
+        <li>
+          <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
+    </address>
+  </footer>
+</body>
+
+</html>

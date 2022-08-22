@@ -1,0 +1,178 @@
+/* Style for Homework #2 by Bryhadyr Kostiantyn */
+
+:root {
+    --font-primary: 'Roboto', 'sans-serif';
+    --font-secondary: 'Raleway', sans-serif;
+    --studio-black: rgb(0, 0, 0);
+    --studio-white: rgb(255, 255, 255);
+    --studio-whitealfa:rgba(255, 255, 255, 0.6);
+    --studio-blue: rgba(33, 150, 243, 1);
+    --studio-hover-blue: rgba(24, 140, 232, 1);
+    --studio-dark: rgba(33, 33, 33, 1);
+    --studio-text: rgba(117, 117, 117, 1);
+    --studio-darkbg: rgba(47, 48, 58, 1);
+    --studio-lines: rgba(236, 236, 236, 1);
+    --studio-lightbg: rgba(245, 244, 250, 1);
+  }
+
+body {
+    background-color: var(--studio-white);
+    font-family: var(--font-primary);
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--studio-text);
+    letter-spacing: 0.03em;
+}
+ul {
+    list-style-type: none;
+}
+/* Header */
+.logo {
+    font-family: var(--font-secondary);
+    font-size: 26px;
+    font-weight: 700;
+}
+.logo > span {
+    color: var(--studio-blue);
+}
+a.logo {
+    color: var(--studio-black);
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.list a {
+    text-decoration: none;
+}
+.menu-link {
+    font-weight: 500;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--studio-dark);
+}
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active,
+.current {
+    color: var(--studio-blue);
+}
+.contact-mail,
+.contact-num {
+    color: var(--studio-text);
+}
+/* Hero */
+.hero {
+    background-color: var(--studio-darkbg);
+    text-align: center;
+}
+h1.hero_title {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--studio-white);
+}
+button.hero_button {
+    font-family: var(--font-primary);
+    color: var(--studio-white);
+    background-color: var(--studio-blue);
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+}
+.hero_button:hover {
+    background-color: var(--studio-hover-blue);
+    cursor: pointer;
+}
+h2.section_title {
+    color: var(--studio-dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+/* Features */
+h3.features_iteam_title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--studio-dark);
+}
+p.features_text {
+}
+
+/* Crew */
+
+h3.crew_title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--studio-dark);
+}
+.crew_blox_block>p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 0.8;
+}
+
+/* Portfolio */
+.project h2.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--studio-dark);
+}
+.project p.description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--studio-text);
+}
+button.portfolio_filtr {
+    background-color: var(--studio-lightbg);
+    color: var(--studio-dark);
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+button.portfolio_filtr:hover, 
+button.portfolio_filtr:active,
+button.portfolio_filtr:focus {
+    font-family: var(--font-primary);
+    background-color: var(--studio-blue);
+    color: var(--studio-white);
+    cursor: pointer;
+}
+/* Footer */
+.footer {
+    background-color: var(--studio-darkbg);
+    color: var(--studio-white);
+}
+.footer .logo {
+    color: var(--studio-white);
+}
+.address {
+    line-height: 1.8;
+    font-style: normal;
+}
+a.loc {
+    color: var(--studio-white);
+    text-decoration: none;
+}
+a.mail,
+a.tel {
+    color: var(--studio-text);
+    text-decoration: none;
+}
+
