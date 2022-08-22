@@ -1,2 +1,3 @@
-# goit_homework_2
-GoIT Lessons Homework 2
+# goit_homework_3
+
+GoIT Lessons Homework 3
