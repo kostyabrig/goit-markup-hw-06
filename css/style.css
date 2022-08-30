@@ -23,6 +23,15 @@ body {
     color: var(--studio-text);
     letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin:0;
+}
 button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
@@ -42,7 +51,7 @@ img {
   display: block;
 }
 .section {
-    padding: 94px;
+    padding: 94px 0;
 }
 h2.section_title {
     margin-top: 0;
@@ -57,7 +66,6 @@ h2.section_title {
 }
 /* Header */
 .header {
-    background-color: var(--studio-white);
     border-bottom: 1px solid var(--studio-lightbg);
 }
 .logo {
@@ -132,6 +140,8 @@ ul.header-nav-menu {
 /* Hero */
 .hero {
     background-color: var(--studio-darkbg);
+    padding-top:200px;
+    padding-bottom:200px;
 }
 h1.hero_title {
     font-size: 44px;
@@ -145,8 +155,6 @@ h1.hero_title {
     width: 696px;
 }
 .hero > .container {
-    padding-top:200px;
-    padding-bottom:200px;
     text-align: center;
 }
 .hero_button {
@@ -187,6 +195,7 @@ h3.features_iteam_title {
     line-height: 16px;
     text-transform: uppercase;
     color: var(--studio-dark);
+    margin-bottom: 10px;
 }
 p.features_text {
 }
@@ -220,11 +229,13 @@ h3.crew_title {
     line-height: 19px;
     text-align: center;
     color: var(--studio-dark);
+    margin: 30px 0 10px;
 }
 .crew_blox_block>p {
     text-align: center;
     font-size: 16px;
     line-height: 0.8;
+    margin: 10px 0 30px;
 }
 
 /* Portfolio */
@@ -287,7 +298,15 @@ button.portfolio_filtr:focus {
 .project-descr {
     padding: 20px 24px;
     border: 1px solid var(--studio-lightbg);
+    border-top: none;
 }
+.project-descr h2 {
+    margin-bottom: 4px;
+}
+.project-descr p {
+    margin-top: 4px;
+}
+
 
 /* Footer */
 .footer {
@@ -296,12 +315,17 @@ button.portfolio_filtr:focus {
     padding-top:60px;
     padding-bottom:60px;
 }
-.footer .logo {
+.footer a.logo {
     color: var(--studio-white);
+    display: block;
+    margin-bottom: 20px;
 }
 .address {
     line-height: 1.8;
     font-style: normal;
+}
+.address li:not(:last-child) {
+margin-bottom: 9px;
 }
 a.loc {
     color: var(--studio-white);
