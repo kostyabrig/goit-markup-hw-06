@@ -1,4 +1,4 @@
-/* Style for Homework #3 by Bryhadyr Kostiantyn */
+/* Style for Homework #4 by Bryhadyr Kostiantyn */
 
 :root {
     --font-primary: 'Roboto', 'sans-serif';
@@ -13,6 +13,7 @@
     --studio-darkbg: rgba(47, 48, 58, 1);
     --studio-lines: rgba(236, 236, 236, 1);
     --studio-lightbg: rgba(245, 244, 250, 1);
+    --studio-icons:rgba(175, 177, 184, 1);
   }
 
 body {
@@ -107,7 +108,18 @@ a.logo {
 }
 .contact-mail,
 .contact-num {
+    display: inline-flex;
+    align-items: center;
     color: var(--studio-text);
+    fill: var(--studio-text);
+}
+.contact-num .svg,
+.contact-mail .svg {
+    margin-right: 10px;
+}
+.contact-num:hover,
+.contact-mail:hover {
+    fill: var(--studio-blue);
 }
 .header-nav {
     display: flex;
@@ -139,7 +151,11 @@ ul.header-nav-menu {
 
 /* Hero */
 .hero {
-    background-color: var(--studio-darkbg);
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/hero-bg-img.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     padding-top:200px;
     padding-bottom:200px;
 }
@@ -182,6 +198,22 @@ h1.hero_title {
 .features_iteam {
     width: 270px;
 }
+.features-iteam-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--studio-lightbg);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.features-iteam-icon svg {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    
+}
 h2.section_title {
     color: var(--studio-dark);
     font-weight: 700;
@@ -213,7 +245,7 @@ section.whatwedo {
 .section.crew {
     background-color: var(--studio-lightbg);
 }
-.crew .container ul {
+.crew .container ul.crew_blox {
     display: flex;
     justify-content: space-between;
 }
@@ -237,7 +269,51 @@ h3.crew_title {
     line-height: 0.8;
     margin: 10px 0 30px;
 }
-
+ul.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 16px 32px 30px;
+}
+.social-icons li {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    fill: var(--studio-icons);
+}
+li.soc-iteam:hover,
+li.soc-iteam:focus {
+    background-color: var(--studio-blue);
+    fill: var(--studio-white);
+    cursor: pointer;
+}
+.soc-iteam svg {
+    width:20px;
+    height: 20px;
+}
+/* Clients Section */
+h2.clients {
+    text-align: center;
+}
+.clients-list {
+    display:flex;
+    justify-content: space-between;
+}
+.client-iteam button {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--studio-icons);
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: var(--studio-icons);
+}
+.client-iteam button:hover,
+.client-iteam button:focus {
+    border: 1px solid var(--studio-blue);
+    fill: var(--studio-blue);
+}
 /* Portfolio */
 .portfolio-filtr-container {
     display: flex;
@@ -289,6 +365,10 @@ button.portfolio_filtr:focus {
     margin-right: 30px;
     margin-bottom: 30px;
 }
+.project:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
 .project:nth-child(3n) {
     margin-right: 0;
 }
@@ -315,6 +395,10 @@ button.portfolio_filtr:focus {
     padding-top:60px;
     padding-bottom:60px;
 }
+div.container.footer-blox {
+    display: flex;
+    align-items: baseline;
+}
 .footer a.logo {
     color: var(--studio-white);
     display: block;
@@ -335,5 +419,37 @@ a.mail,
 a.tel {
     color: var(--studio-text);
     text-decoration: none;
+}
+div.addres-box {
+    margin-right: 70px;
+}
+div.footer-social-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+ul.social-icons-footer {
+    display: flex;
+    justify-content:start;
+
+}
+.social-icons-footer li {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    fill: var(--studio-white);
+    background: rgba(255, 255, 255, 0.1);
+}
+.social-icons-footer li:not(:last-child) {
+    margin-right: 10px;
+}
+.footer li.soc-iteam:hover,
+.footer li.soc-iteam:focus {
+    background-color: var(--studio-blue);
+    fill: var(--studio-white);
+    cursor: pointer;
 }
 
