@@ -281,6 +281,7 @@ ul.social-icons {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    background-color:var(--studio-white);
     fill: var(--studio-icons);
 }
 li.soc-iteam:hover,
