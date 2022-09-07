@@ -1,5 +1,5 @@
-# goit_homework_5
+# goit_homework_6
 
-GoIT Lessons Homework 5
+GoIT Lessons Homework 6
 
 
