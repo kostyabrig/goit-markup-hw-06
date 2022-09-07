@@ -14,6 +14,8 @@
     --studio-lines: rgba(236, 236, 236, 1);
     --studio-lightbg: rgba(245, 244, 250, 1);
     --studio-icons:rgba(175, 177, 184, 1);
+    --studio-overlay:rgba(33, 150, 243, 0.9);
+    --studio-main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 body {
@@ -99,6 +101,7 @@ a.logo {
     line-height: 1.4;
     letter-spacing: 0.02em;
     color: var(--studio-dark);
+    transition: color var(--studio-main-transition);
 }
 .menu-link:hover,
 .menu-link:focus,
@@ -112,6 +115,7 @@ a.logo {
     align-items: center;
     color: var(--studio-text);
     fill: var(--studio-text);
+    transition: color var(--studio-main-transition);
 }
 .contact-num .svg,
 .contact-mail .svg {
@@ -147,6 +151,19 @@ ul.header-nav-menu {
 }
 .nav-contacts {
     margin-left: auto;
+}
+.menu-iteam {
+    position: relative;
+}
+a.current::after {
+    content: "";
+    background-color: var(--studio-blue);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 /* Hero */
@@ -185,6 +202,7 @@ h1.hero_title {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    transition: background-color var(--studio-main-transition);
 }
 .hero_button:hover {
     background-color: var(--studio-hover-blue);
@@ -234,13 +252,30 @@ p.features_text {
 }
 
 /* What We Do */
-section.whatwedo {
+.section.whatwedo {
     padding-top: 0px;
 }
 .whatwedo .container ul {
     display: flex;
     justify-content: space-between;
 }
+.whatwedo-img {
+    position: relative;
+    display: flex;
+}
+.img-overlay {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background-color: var(--studio-darkbg);
+    opacity: 0.8;
+    color: var(--studio-white);
+    text-transform: uppercase;
+    text-align: center;
+    bottom: 0;
+    padding: 27px 0 27px;
+}
+
 
 /* Crew */
 .section.crew {
@@ -275,7 +310,7 @@ ul.social-icons {
     justify-content: space-evenly;
     margin: 16px 32px 30px;
 }
-.social-icons li {
+.social-icons li a.soc-link-item {
     width: 44px;
     height: 44px;
     display: flex;
@@ -284,9 +319,10 @@ ul.social-icons {
     border-radius: 50px;
     background-color:var(--studio-white);
     fill: var(--studio-icons);
+    transition: background-color var(--studio-main-transition);
 }
-li.soc-iteam:hover,
-li.soc-iteam:focus {
+li.soc-iteam a.soc-link-item:hover,
+li.soc-iteam a.soc-link-item:focus {
     background-color: var(--studio-blue);
     fill: var(--studio-white);
     cursor: pointer;
@@ -310,6 +346,7 @@ h2.clients {
     box-sizing: border-box;
     border-radius: 4px;
     fill: var(--studio-icons);
+    transition: fill var(--studio-main-transition);
 }
 .client-iteam button:hover,
 .client-iteam button:focus {
@@ -332,7 +369,7 @@ h2.clients {
     letter-spacing: 0.06em;
     color: var(--studio-dark);
 }
-.project p.description {
+.project a.project-link p.subtitle {
     font-size: 16px;
     line-height: 1.8;
     color: var(--studio-text);
@@ -346,6 +383,8 @@ button.portfolio_filtr {
     line-height: 1.6;
     text-align: center;
     border-radius: 4px;
+    transition: color var(--studio-main-transition);
+    transition: background-color var(--studio-main-transition);
 }
 button.portfolio_filtr:hover, 
 button.portfolio_filtr:active,
@@ -370,6 +409,33 @@ button.portfolio_filtr:focus {
 a.project-link {
     display: block;
     text-decoration: none;
+    transition: box-shadow var(--studio-main-transition);
+}
+.project-overlay-wraper {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    background-color: var(--studio-overlay);
+    color: var(--studio-white);
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    padding: 63px 24px;
+    top:0;
+    left:0;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform var(--studio-main-transition);
+}
+.project-link:hover .overlay,
+.project-link:focus .overlay {
+    transform: translateY(0%);
 }
 a.project-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -439,7 +505,7 @@ ul.social-icons-footer {
     justify-content:start;
 
 }
-.social-icons-footer li {
+li.soc-iteam a.soc-footer-link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -448,14 +514,52 @@ ul.social-icons-footer {
     border-radius: 50px;
     fill: var(--studio-white);
     background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--studio-main-transition);
 }
-.social-icons-footer li:not(:last-child) {
+.social-icons-footer li.soc-iteam:not(:last-child) {
     margin-right: 10px;
 }
-.footer li.soc-iteam:hover,
-.footer li.soc-iteam:focus {
+.footer li.soc-iteam a.soc-footer-link:hover,
+.footer li.soc-iteam a.soc-footer-link:focus {
     background-color: var(--studio-blue);
     fill: var(--studio-white);
     cursor: pointer;
 }
 
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+.modal {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: var(--studio-white);
+    transform: translate(-50%, -50%);
+}
+button.modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--studio-dark);
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

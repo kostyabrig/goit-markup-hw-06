@@ -15,6 +15,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/modal.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero_button" type="button">Замовити послугу</button>
+        <button class="hero_button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- Features -->
@@ -115,16 +116,19 @@
       <div class="container">
         <h2 class="section_title">Чим ми займаємося</h2>
         <ul>
-          <li>
+          <li class="whatwedo-img">
             <img src="./images/whatwedo_box_1.jpg" alt="Зображення компьютера та планшету" width="370" height="294" />
+            <p class="img-overlay">Десктопні додатки</p>
           </li>
-          <li>
+          <li class="whatwedo-img">
             <img src="./images/whatwedo_box_2.jpg" alt="Зображення тестування мобиільного застосунку" width="370"
               height="294" />
+            <p class="img-overlay">Мобільні додатки</p>
           </li>
-          <li>
+          <li class="whatwedo-img">
             <img src="./images/whatwedo_box_3.jpg" alt="Зображення користувача iPad який працює з палітрою" width="370"
               height="294" />
+            <p class="img-overlay">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
@@ -141,24 +145,32 @@
             <p>Product Designer</p>
             <ul class="social-icons">
               <li class="soc-iteam">
-                <svg class="icon-instagram">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-instagram">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-twit">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-twit">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-facebook">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-facebook">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-in">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-in">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -169,24 +181,32 @@
             <p>Frontend Developer</p>
             <ul class="social-icons">
               <li class="soc-iteam">
-                <svg class="icon-instagram">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-instagram">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-twit">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-twit">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-facebook">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-facebook">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-in">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-in">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -196,24 +216,32 @@
             <p>Marketing</p>
             <ul class="social-icons">
               <li class="soc-iteam">
-                <svg class="icon-instagram">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-instagram">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-twit">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-twit">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-facebook">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-facebook">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-in">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-in">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -224,24 +252,32 @@
             <p>UI Designer</p>
             <ul class="social-icons">
               <li class="soc-iteam">
-                <svg class="icon-instagram">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-instagram">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-twit">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-twit">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-facebook">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-facebook">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="soc-iteam">
-                <svg class="icon-in">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
+                <a href="#" class="soc-link-item">
+                  <svg class="icon-in">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -294,29 +330,47 @@
         <p class="footer-social-title">приєднуйтесь</p>
         <ul class="social-icons-footer">
           <li class="soc-iteam">
-            <svg class="icon-instagram">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
+            <a href="#" class="soc-footer-link">
+              <svg class="icon-instagram">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="soc-iteam">
-            <svg class="icon-twit">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
+            <a href="#" class="soc-footer-link">
+              <svg class="icon-twit">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="soc-iteam">
-            <svg class="icon-facebook">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
+            <a href="#" class="soc-footer-link">
+              <svg class="icon-facebook">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="soc-iteam">
-            <svg class="icon-in">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
+            <a href="#" class="soc-footer-link">
+              <svg class="icon-in">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </footer>
+  <!-- Modal Window -->
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="svg" width="18" height="18">
+          <use href="./images/icons.svg#icon-close-black-18dp"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>
