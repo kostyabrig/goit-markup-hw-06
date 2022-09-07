@@ -535,6 +535,8 @@ li.soc-iteam a.soc-footer-link {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 999;
+    opacity: 1;
+    transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     position: absolute;
@@ -544,6 +546,8 @@ li.soc-iteam a.soc-footer-link {
     height: 581px;
     background-color: var(--studio-white);
     transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 button.modal-close-btn {
     display: flex;
