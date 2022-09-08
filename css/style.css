@@ -1,4 +1,4 @@
-/* Style for Homework #6 by Bryhadyr Kostiantyn */
+/* Style for Homework #4 by Bryhadyr Kostiantyn */
 
 :root {
     --font-primary: 'Roboto', 'sans-serif';
@@ -264,13 +264,16 @@ h3.features_iteam_title {
     position: absolute;
     width: 370px;
     height: 70px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--studio-darkbg);
     opacity: 0.8;
     color: var(--studio-white);
     text-transform: uppercase;
     text-align: center;
     bottom: 0;
-    padding: 27px 0 27px;
 }
 
 
@@ -316,7 +319,7 @@ ul.social-icons {
     border-radius: 50px;
     background-color:var(--studio-white);
     fill: var(--studio-icons);
-    transition: background-color var(--studio-main-transition);
+    transition: fill var(--studio-main-transition), background-color var(--studio-main-transition);
 }
 li.soc-iteam a.soc-link-item:hover,
 li.soc-iteam a.soc-link-item:focus {
@@ -343,7 +346,7 @@ h2.clients {
     box-sizing: border-box;
     border-radius: 4px;
     fill: var(--studio-icons);
-    transition: fill var(--studio-main-transition);
+    transition: fill var(--studio-main-transition), border-color var(--studio-main-transition);
 }
 .client-iteam button:hover,
 .client-iteam button:focus {
@@ -533,7 +536,7 @@ li.soc-iteam a.soc-footer-link {
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 999;
     opacity: 1;
-    transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     position: absolute;
